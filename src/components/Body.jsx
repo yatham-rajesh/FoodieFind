@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ResCard from "./ResCard";
+import Restaurant from "./Restaurents/Restaurant";
 
 export default Body = () => {
   useEffect(() => {
@@ -16,20 +16,14 @@ export default Body = () => {
     const json = await data.json();
 
     const restaurants =
-      json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants;
+      json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
     console.log(restaurants);
     setDissplayRestaurants(restaurants);
   };
 
   return (
     <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {
-        displayRestaurants.map((restro) => {
-          return <ResCard key={restro.info.id} {...restro.info} />;
-        })}
-      </div>
+      <Restaurant restaurants={displayRestaurants} />
     </div>
   );
 };

@@ -4,7 +4,7 @@ export default Header = () => {
     return (
       <div className="header">
         <div>
-          <img src={LOGO_URL}></img>
+          <img className="header-logo" src={LOGO_URL}></img>
         </div>
         <ul className="nav">
           <li>Home</li>
