@@ -1,0 +1,44 @@
+/* 
+App Section
+*/
+
+img {
+  height: 100px;
+  padding: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+}
+
+.nav > li {
+    padding: 15px;
+}
+
+.res-card{
+    border: 1px solid black;
+    width: 200px;
+    background-color: #f0f0f0;
+    margin: 1rem;
+    align-items: center;
+}
+
+.search{
+    padding: 2rem;
+}
+
+.res-container{
+    display: flex;
+}
+
+.res-logo{
+    width: 150px;
+}
