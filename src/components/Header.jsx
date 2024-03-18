@@ -1,4 +1,5 @@
 import { LOGO_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 export default Header = () => {
     return (
@@ -7,10 +8,10 @@ export default Header = () => {
           <img className="header-logo" src={LOGO_URL}></img>
         </div>
         <ul className="nav">
-          <li>Home</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/Contact">Contact Us</Link></li>
           <li>Cart</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
         </ul>
       </div>
     );

@@ -96,3 +96,14 @@ App Section
     display: flex;
     justify-content: space-between;
   }
+
+
+  /* item card */
+  .item-card{
+    width: 45%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: auto;
+  }
